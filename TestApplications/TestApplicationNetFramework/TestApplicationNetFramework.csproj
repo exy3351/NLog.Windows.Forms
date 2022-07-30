@@ -1,11 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<OutputType>WinExe</OutputType>
-		<TargetFramework>net462</TargetFramework>
+		<TargetFramework>net48</TargetFramework>
 		<AssemblyTitle>TestApplication</AssemblyTitle>
 		<Product>TestApplication</Product>
 		<OutputPath>bin\$(Configuration)\</OutputPath>
 	</PropertyGroup>
+	
 	<ItemGroup>
 		<Compile Include="..\TestApplication.Shared\Form1.cs" Link="Form1.cs" />
 		<Compile Include="..\TestApplication.Shared\Form1.Designer.cs" Link="Form1.Designer.cs" />
@@ -17,6 +18,7 @@
 		</None>
 		<ProjectReference Include="..\..\NLog.Windows.Forms\NLog.Windows.Forms.csproj" />
 	</ItemGroup>
+	
 	<ItemGroup>
 		<Reference Include="System.Data.DataSetExtensions" />
 		<Reference Include="Microsoft.CSharp" />
